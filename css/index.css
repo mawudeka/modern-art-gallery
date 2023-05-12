@@ -165,6 +165,19 @@ h2 {
 		font-size: 2.5rem;
 	}
 
+	.header {
+		display: flex;
+	}
+
+	.header__grid {
+		z-index: -1;
+	}
+
+	.header_text {
+		max-width: 350px;
+		z-index: 99;
+		transform: translateX(-100px);
+	}
 	.footer__container {
 		display: grid;
 		grid-template-columns: 200px auto 200px;
@@ -217,6 +230,9 @@ h2 {
 	.header_background--mobile {
 		display: none;
 	}
+	.header {
+		display: block;
+	}
 
 	.header_background--desktop {
 		display: block;
@@ -230,5 +246,24 @@ h2 {
 	.blank_black {
 		min-height: 100%;
 		background: #151515;
+	}
+	.header_text {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		transform: translateY(-250%);
+		max-width: 95%;
+		margin: 0 auto;
+		z-index: 99;
+	}
+	.header_text-right {
+		max-width: 300px;
+	}
+	.header__head {
+		color: transparent;
+		-webkit-text-stroke: 0.5px #fff;
+		font-size: 3.5rem;
+		margin-left: 50px;
 	}
 }
